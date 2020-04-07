@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    background-color: #F4A44A;
+}
+
+.app {
+    min-height: 93.7vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 50px 0px 30px 0px;
+    text-align: center;
+    font-size: 40px;
+}
+header p {
+    font-size: 25px;
+}
+
+.pads {
+    background: lightblue;
+    width: 100%;
+    display: flex;
+}
+.pads > div {
+    height: 100px;
+    width: 100px;
+    flex: 1;
+}
+
+.pad1 {
+    background: #60d394;
+}
+.pad2 {
+    background: #d36060;
+}
+.pad3 {
+    background: #c060d3;
+}
+.pad4 {
+    background: #d3d160;
+}
+.pad5 {
+    background: #606bd3;
+}
+.pad6 {
+    background: #60c2d3;
+}
+
+.visual > div {
+    position: absolute;
+    bottom: 0%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    transform: scale(1);
+    z-index: -1;
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0%;
+        left: 20%;
+    }
+
+    50% {
+        bottom: 50%;
+        left: 50%;
+    }
+
+    100% {
+        bottom: 00%;
+        left: 80%;
+    }
+}
+
+button{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#hideshow{
+    position: absolute;
+    right: 30px;
+    top: 60px;
+    height: 30px;
+    width: 30px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a, .active2 {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover, .active2:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.active1 {
+    background-color: #4CAF50;
+    color: white;
+}
+.active2 {
+    background-color: #6092d3;
+    color: white;
+    float: right;
+    overflow: hidden;
+    position: absolute;
+    right: 0px;
+}
+.active3 {
+    background-color: #000;
+    color: white;
+}
+
+.search_bar{
+    position: absolute;
+    top: 8px;
+    right: 100px;
+}
+
+
+.search_bar input{
+    height: 30px;
+    float: left;
+    padding: 5px;
+}
+
+.search_bar button{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}

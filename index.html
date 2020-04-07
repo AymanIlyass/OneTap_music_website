@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"/>
+        <link rel="stylesheet" href="./style.css" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Tap Music</title>
+    </head>
+    <body>
+
+        <div class="topnav">
+            <a class="active1" href="#home">Home</a>
+            <a href="#sounds">Sounds</a>
+            <a href="#songs">Songs</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <!--<a class="active3" href="signup.html">Register</a>-->
+            <div class="search_bar">
+                <input id="input" type="text" placeholder="Search...">
+                <button type="button">Go</button>
+
+                <script type="text/javascript">
+                    document.getElementById("input").addEventListener("keypress", myFunction);
+                    function myFunction() {
+                      document.getElementById("input").style.backgroundColor = "#F4A44A";
+                    }
+                </script>
+                
+
+            </div>
+                <div>
+                   <!-- <a class="active2" href="login.html">Login</a>-->
+                </div>
+        </div>
+
+        <section class="app">
+            <header>
+                <img src="pictures/qst_mark.png" id="hideshow" onclick="" style="cursor: pointer;">
+                <div class="panel">
+                  <br>
+                    <p class="content" style="display:none; position: fixed; right: 80px; border:2px solid; padding: 10px; border-radius: 20px;">
+                      1°: A<br>
+                      2°: S<br>
+                      3°: D<br>
+                      4°: F<br>
+                      5°: G<br>
+                      6°: H<br>
+                    </p>
+                </div>
+                <h1>Tap Music</h1>
+                <p>Create sounds with just one tap</p>
+            </header>
+            <div class="visual"></div>
+            <div class="pads">
+
+                <div class="pad1">
+                   <audio class="sound">
+                      <source src="./sounds/bubbles.mp3" >
+                   </audio>
+                </div>
+                <div class="pad2">
+                   <audio class="sound">
+                      <source src="./sounds/clay.mp3" />
+                  </audio>
+                </div>
+                <div class="pad3">
+                    <audio class="sound">
+                      <source src="./sounds/confetti.mp3" />
+                    </audio>
+                </div>
+                <div class="pad4">
+                    <audio class="sound">
+                      <source src="./sounds/glimmer.mp3" />
+                    </audio>
+                </div>
+                <div class="pad5">
+                    <audio class="sound">
+                      <source src="./sounds/moon.mp3" />
+                    </audio>
+                </div>
+                <div class="pad6">
+                    <audio class="sound">
+                      <source src="./sounds/ufo.mp3" />
+                    </audio>
+                </div>
+
+            </div>
+        </section>
+
+        <script src="index.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript">
+                $(document).ready(function(){
+                $('#hideshow').on('click', function(event) {        
+                   $('.content').toggle('show');
+                });
+              });
+        </script>
+    </body>
+</html>
